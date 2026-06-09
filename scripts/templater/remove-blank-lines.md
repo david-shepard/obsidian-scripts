@@ -1,6 +1,7 @@
+<%*
 // Save this in `templater` Folder location as ie. `Remove empty lines.md`
 // Use via "Templater: Open Insert Templater Modal -> Remove empty lines" 
-<%*
+
 // highlighted selection
 const noteContent = tp.file.selection();
 

@@ -1,3 +1,4 @@
+<%*
 // common language options
 const langOptions = [
     "yaml", 
@@ -44,3 +45,4 @@ lines.forEach((line,i,arr) => {
 
 // set note contents to new lines
 await tp.app.vault.modify(tp.config.target_file, outLines.join('\n'));
+%>

@@ -1,11 +1,17 @@
-noteContent = tp.file.selection();
+// Save this in `templater` Folder location as ie. `Remove empty lines.md`
+// Use via "Templater: Open Insert Templater Modal -> Remove empty lines" 
+<%*
+// highlighted selection
+const noteContent = tp.file.selection();
 
 //get array of lines
-lines = noteContent.split('\n')
+const linesOrig = noteContent.split('\n')
 
-// filter out empty lines
-const newLines = lines.
-  map(elem => elem.trim()).
-  filter(elem => elem.length > 0)
+// filter out empty lines, using `flatMap` avoid the need for filter step
+const newLines = linesOrig.flatMap((line) => {
+    if (line.trim().length > 0) return line
+    return []
+})
 
 return newLines.join('\n')
+%>

@@ -1,4 +1,7 @@
+```md
 <%*
+// Make sure to copy this in Raw formatting!
+
 // common language options
 const langOptions = [
     "yaml", 
@@ -23,7 +26,7 @@ if (selectedLang === "Other...") {
 const noteContent = tp.file.content
 const lines = noteContent.split('\n')
   
-// first "```" is always a code block heading
+// first set of 3 tilde's is always a code block heading
 let isCodeBlockHeader = true
 const outLines = []
 
@@ -46,3 +49,4 @@ lines.forEach((line,i,arr) => {
 // set note contents to new lines
 await tp.app.vault.modify(tp.config.target_file, outLines.join('\n'));
 %>
+```

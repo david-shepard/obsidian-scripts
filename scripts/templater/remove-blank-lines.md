@@ -1,3 +1,4 @@
+```md
 <%*
 // Save this in `templater` Folder location as ie. `Remove empty lines.md`
 // Use via "Templater: Open Insert Templater Modal -> Remove empty lines" 
@@ -16,3 +17,4 @@ const newLines = linesOrig.flatMap((line) => {
 
 return newLines.join('\n')
 %>
+```

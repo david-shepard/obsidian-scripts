@@ -25,9 +25,9 @@ Save them in **Templater** `Template folder location` (see [templater docs](http
 - [Local Backup](https://obsidian.md/plugins?id=local-backup)
 - [Hider](https://obsidian.md/plugins?id=obsidian-hider)
 - [Linter](https://obsidian.md/plugins?id=obsidian-linter)
-- [Style Settings](https://obsidian.md/plugins?id=obsidian-style-settings
+- [Style Settings](https://obsidian.md/plugins?id=obsidian-style-settings)
 - [Iconize](https://obsidian.md/plugins?id=obsidian-icon-folder)
-- [Automatic Table of Contents](https://obsidian.md/plugins?id=automatic-
+- [Automatic Table of Contents](https://community.obsidian.md/plugins/automatic-table-of-contents)
 - [Show Current File Path](https://obsidian.md/plugins?id=obsidian-show-file-path)
 - [Obsidian Git](https://obsidian.md/plugins?id=obsidian-git)
 - [Spellcheck Toggler](https://obsidian.md/plugins?id=spellcheck-toggler)

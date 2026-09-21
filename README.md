@@ -7,6 +7,12 @@ Make sure to view the [scripts/templater](scripts/templater) scripts as **Raw** 
 
 Save them in **Templater** `Template folder location` (see [templater docs](https://silentvoid13.github.io/Templater/settings.html#general-settings))
 
+## Claude `run-vault-triage` command
+
+Produce a **vault triage proposal** — a single new note recommending how to file,
+tag, and link the vault's loose ends.
+
+See files in [scripts/claude-powershell] for more details, "triage" (perhaps housekeeping is more appropriate) is a command I run every `n` days to ensure the vault remains sanitary
 
 ## Key plugins
 - [Templater](https://silentvoid13.github.io/Templater) **(required)**

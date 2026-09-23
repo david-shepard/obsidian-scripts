@@ -52,7 +52,7 @@ if (-not (Test-Path -LiteralPath $Runner)) { throw "Runner not found: $Runner" }
 $pwshPath = (Get-Command pwsh).Source
 $action = New-ScheduledTaskAction `
     -Execute $pwshPath `
-    -Argument "-NoProfile -NonInteractive -WindowStyle Hidden -File `"$Runner`" -Days $Days" `
+    -Argument "-NoProfile -Interactive -WindowStyle Hidden -File `"$Runner`" -Days $Days" `
     -WorkingDirectory $VaultRoot
 
 $trigger = New-ScheduledTaskTrigger -Daily -DaysInterval $DaysInterval -At $Time

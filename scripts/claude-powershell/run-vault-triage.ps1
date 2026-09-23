@@ -88,6 +88,7 @@ try {
     Log "Invoking Claude..."
     Push-Location $VaultRoot
     try {
+        # commenting this out to run interactively
         # $output = & $claude @claudeArgs 2>&1 | Out-String
         & $claude @claudeArgs
         $claudeExit = $LASTEXITCODE
@@ -95,7 +96,7 @@ try {
         Pop-Location
     }
 
-    Add-Content -LiteralPath $LogFile -Value $output -Encoding utf8NoBOM
+    # Add-Content -LiteralPath $LogFile -Value $output -Encoding utf8NoBOM
     if ($claudeExit -ne 0) { throw "claude exited $claudeExit" }
 
     $triageNote = Join-Path $VaultRoot "Scratch\Vault Triage\Triage $Stamp.md"

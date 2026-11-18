@@ -1,0 +1,83 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Steam Game",
+	"behavior": "create",
+	"noteContentFormat": "# {{selector:#appHubAppName}}\n\n## Description\n{{selector:#game_area_description|markdown}}\n\n\n\n",
+	"properties": [
+		{
+			"name": "categories",
+			"value": "[[Games]]",
+			"type": "multitext"
+		},
+		{
+			"name": "maker",
+			"value": "{{selector:#developers_list|join:\\\",\\\"|wikilink}}",
+			"type": "text"
+		},
+		{
+			"name": "genres",
+			"value": "{{selector:#genresAndManufacturer a[href*=genre]|join:\\\",\\\"}}",
+			"type": "text"
+		},
+		{
+			"name": "year",
+			"value": "{{selector:.release_date>div.date|split:\\\",\\\"|last}}",
+			"type": "number"
+		},
+		{
+			"name": "system",
+			"value": "[[PC]]",
+			"type": "text"
+		},
+		{
+			"name": "rating",
+			"value": "",
+			"type": "number"
+		},
+		{
+			"name": "steamRating",
+			"value": "{{selector:meta[itemprop=ratingValue]?content}}",
+			"type": "text"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "last",
+			"value": "",
+			"type": "date"
+		},
+		{
+			"name": "tags",
+			"value": "game",
+			"type": "multitext"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "game_tags",
+			"value": "{{selector:.glance_tags a.app_tag|join:\\\", \\\"}}",
+			"type": "multitext"
+		},
+		{
+			"name": "description",
+			"value": "{{meta:property:og:description}}",
+			"type": "text"
+		},
+		{
+			"name": "key",
+			"value": "",
+			"type": "text"
+		}
+	],
+	"triggers": [
+		"https://store.steampowered.com/app/"
+	],
+	"noteNameFormat": "{{selector:#appHubAppName}}",
+	"path": "Topics/Gaming/Games list"
+}

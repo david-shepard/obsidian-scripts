@@ -16,8 +16,14 @@ Produce a **vault triage proposal** — a single new note recommending how to fi
 - [Templater](https://silentvoid13.github.io/Templater) **(required)**
 - [QuickAdd](https://quickadd.obsidian.guide/) (optional)
 - [Codescript Toolkit](https://github.com/mnaoumov/obsidian-codescript-toolkit) (optional)
+- [Obsidian Web Clipper](https://obsidian.md/clipper), see templates in [web-clipper](./scripts/web-clipper/) (Links to other templates below)
+    - [clipper-templates/templates at main · kepano/clipper-templates](https://github.com/kepano/clipper-templates/tree/main/templates)
+    - [community-archive/web-clipper-templates: Community collection of templates for the official Obsidian web clipper.](https://github.com/community-archive/web-clipper-templates)
+    - [esodesod/obsidian-web-clipper-templates: My collection of Obsidian Web Clipper templates](https://github.com/esodesod/obsidian-web-clipper-templates)
+    - [obsidian-web-clipper-templates/README.md at main · joshklein/obsidian-web-clipper-templates](https://github.com/joshklein/obsidian-web-clipper-templates/blob/main/README.md)
 
-## Other plugins I use
+
+## Other useful plugins
 - [Front Matter Title](https://obsidian.md/plugins?id=obsidian-front-matter-title-plugin)
 - [Global Search and Replace](https://obsidian.md/plugins?id=global-search-and-replace)
 - [Settings Search](https://obsidian.md/plugins?id=settings-search)
